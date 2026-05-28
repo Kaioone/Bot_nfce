@@ -17,7 +17,13 @@ from aiogram.types import Message, FSInputFile
 # =========================================
 
 load_dotenv()
+print("ENV:", dict(os.environ))
 TOKEN = os.getenv("BOT_TOKEN")
+
+print("TOKEN =", TOKEN)
+print("TIPO =", type(TOKEN))
+
+# bot = Bot(token=TOKEN)
 
 # =========================================
 # TESSERACT
